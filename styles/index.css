@@ -1,0 +1,56 @@
+@keyframes rainbow {
+    0% {
+      background-color: violet;
+    }
+    14% {
+      background-color: red;
+    }
+    28% {
+      background-color: orange;
+    }
+    42% {
+      background-color: yellow;
+    }
+    56% {
+      background-color: green;
+    }
+    70% {
+      background-color: blue;
+    }
+    84% {
+      background-color: indigo;
+    }
+    100% {
+      background-color: violet;
+    }
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    z-index: 100;
+    text-align: center;
+}
+
+html {
+    background-image: linear-gradient(80deg,blue -20%, rgb(255, 4, 255) , rgb(255, 0, 0) 120%);    
+    z-index: 1;
+    height: 100%;
+    background-size: cover;
+}
+
+html:hover {
+    animation: rainbow 7s linear infinite;
+    background-image: none;
+}
+
+.navigation a:visited {
+    color: black;
+}
+
+.navigation a:link {
+    color: black;
+}
